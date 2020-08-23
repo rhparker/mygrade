@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="mygrade.css">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.5.1.min.js"
+	  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+	  crossorigin="anonymous">
+	 </script>
+
+	<script type="text/javascript" src="mygrade.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Math 1337 Grade Computation</h2>
+<!-- <h3>Standards</h3> -->
+<table class='table table-borderless mytable'>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Find the limit of a function</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>
+</tr>
+<tr>
+<td>2. Find one-sided and infinite limits</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>
+</tr>
+<tr>
+<td>3. Identify when a function is continuous or not continuous</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>
+</tr>
+<tr>
+<td>4. Understand and use the limit definition of the derivative</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>
+</tr>
+<tr>
+<td>5. Determine if a function is differentiable </td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>6. Compute basic derivatives</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>7. Apply the product rule and quotient rule for derivatives</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>8. Find the derivative of expressions involving trigonometric functions</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>9. Apply the chain rule for differentiation</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>10. Compute the derivative of an inverse function</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>11. Use implicit differentiation to find tangents to arbitrary curves</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>12. Find the derivative of expressions involving exponential and logarithmic functions</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>13. Set up and solve a related rate question.</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>14. Use linear approximation to find the approximate value of a function</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>15. Find critical points of a function, determine minima and maxima</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>16. State and understand graphically Rolle's theorem and the mean value theorem</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>17. Identify when a function is increasing or decreasing</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>18. Use the first derivative test to identify local minima and maxima </td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>19. Determine the concavity of a function, and locate inflection points</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>20. Use the second derivative test to identify local minima and maxima</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>21. Compute limits of a function at infinity, and identify horizontal asymptotes</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>22. Set up and solve an optimization problem</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>23. Identify an indeterminate limit, and use L'Hopital's rule to evaluate it</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>24. Understand Newton's method algorithmically and graphically</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>25. Compute antiderivatives of elementary functions</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>26. Estimate the area under a curve using a finite sum</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>27. Express the area under a curve as a definite integral and a Riemann sum</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>28. Understand and apply the fundamental theorem of calculus (part 1) </td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>29. Evaluate definite integrals using the fundamental theorem of calculus (part 2) </td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>30. Simplify integrals of even and odd functions</td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+<tr>
+<td>31. Use the substitution technique </td>
+<td><input type='number' class='std' onchange='setGrades();' onkeyup='setGrades();'/></td>`
+</tr>
+</tbody>
+</table>
+
+<h4>Skill totals</h4>
+<table class='table table-borderless mytable'>
+<tbody>
+<tr><td>Fair (1)</td> 	    <td id='std1'></td></tr>
+<tr><td>Improving (2)</td>  <td id='std2'></td></tr>
+<tr><td>Good (3)</td>	    <td id='std3'></td></tr>
+<tr><td>Outstanding (4)</td><td id='std4'></td></tr>
+</tbody>
+</table>
+
+<table class='table table-borderless mytable'>
+<tbody>
+<tr><td><b>Skills grade: </b></td><td id='stdgrade'></td></tr>
+</tbody>
+</table>
+
+<p>Homework average: <input type='text' id='hwaverage' value='' onchange='setGrades();' onkeyup='setGrades();' /></p>
+
+<table class='table table-borderless mytable'>
+<tbody>
+<tr><td><b>Grade without final exam: </b></td><td id='gradenofinal'></td></tr>
+</tbody>
+</table>
+
+<p>Final exam score: <input type='text' id='finalexamgrade' value='' onchange='setGrades();' onkeyup='setGrades();' /></p>
+
+<table class='table table-borderless mytable'>
+<tbody>
+<tr><td><b>Final grade: </b></td><td id='finalgrade'></td></tr>
+</tbody>
+</table>
+
+</div>
+
+</body>
+</html>
+

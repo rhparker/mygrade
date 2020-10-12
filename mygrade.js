@@ -33,22 +33,33 @@ function setGrades() {
 	}
 	else if (std_pts[4]/num_stds >= 0.8 && std_pts[2] == 0 && std_pts[1] == 0) {
 		$('#stdgrade').html('A');
-		std_grade = 99;
+		std_grade = 96;
 	}
 	else if (threehigher/num_stds >= 0.8 && std_pts[1] == 0) {
 		$('#stdgrade').html('B');
-		std_grade = 89;
+		std_grade = 86;
 	}
 	else if (twohigher/num_stds >= 0.8 ) {
 		$('#stdgrade').html('C');
-		std_grade = 79;
+		std_grade = 76;
 	}
 	else {
 		$('#stdgrade').html('D');
-		std_grade = 69;
+		std_grade = 66;
 	}
 
-	hwaverage = $('#hwaverage').val()
+	excellent    = Number( $('#excellent').val() )
+	satisfactory = Number( $('#satisfactory').val() )
+	fair         = Number( $('#fair').val() )
+	nocredit     = Number( $('#nocredit').val() )
+	totalhw = excellent+satisfactory+fair+nocredit
+	if (totalhw != '') {
+		hwaverage = 100*(1*excellent + 0.92*satisfactory + 0.80*fair)/totalhw
+	}
+	else {
+		hwaverage = ''
+	}
+
 	if (hwaverage != '') {
 		gradenofinal = 0.2 * hwaverage + 0.8 * std_grade;
 		$('#gradenofinal').html( letterGrade(gradenofinal));
